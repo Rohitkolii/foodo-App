@@ -1,0 +1,27 @@
+.ErrorContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Imagecol{
+    width: 400px;
+}
+
+.Imagecol img{
+    width: 100%;
+    opacity: .3;
+}
+
+
+.Errortext{
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.Errortext a{
+    background-color: #5F9DF7;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}

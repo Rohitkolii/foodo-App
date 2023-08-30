@@ -1,0 +1,51 @@
+.main_item {
+    /* padding: 10px; */
+    background-color: #fff;
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .background_masker {
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  .btn_divide_left {
+    top: 0;
+    left: 30%;
+    height: 100%;
+    width: 5%;
+  }
+  
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -800px 0
+    }
+    100% {
+      background-position: 800px 0
+    }
+  }
+  
+  .animated_background {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 250px;
+    position: relative;
+  }
+  
+  .static_background {
+    background-color: #f6f7f8;
+    background-size: 800px 104px;
+    height: 170px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .pure_background {
+    background-color: #eee;
+  }

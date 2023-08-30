@@ -1,0 +1,141 @@
+.SingleContainer{
+    /* background-color: rgb(215, 215, 250); */
+    width: 90%;
+    /* height: 20px; */
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.MainImgCon{
+    width: 380px;
+    height: 280px;
+    margin: auto;
+    background-size: cover;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.348);
+}
+
+.MainImgCon img{
+    width: 100%;
+    height: 100%;
+}
+
+.subImgCon{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    /* height: 100px; */
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.subImg{
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.348);
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid gray; */
+    background-size: cover;
+    /* border-radius: 3px; */
+}
+
+.subImg img{
+    /* border-radius: 3px; */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.intro{
+    color: rgb(62, 62, 62);
+    font-size: 15px;
+    height: 180px;
+    overflow-y: auto;
+}
+
+.intro::-webkit-scrollbar{
+    display: none;
+}
+
+.price{
+    color: #5F9DF7;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.Category{
+    margin-bottom: 10px;
+    color: #5F9DF7;
+}
+
+.QuantitySelector{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.QuantitySelector button{
+    background-color: transparent;
+    padding: 2px;
+    width: 30px;
+    height: 25px;
+    border: transparent;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.Addtocart button{
+    background-color: black;
+    color: white;
+    width: 110px;
+    height: 42px;
+    border: transparent;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width:850px) {
+    .SingleContainer{
+        flex-direction: column;
+    }
+    
+    .subImgCon{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .ImageArea{
+        width: 100%;
+    }
+    
+    .MainImgCon{
+        width: 80%;
+        height: 300px;
+    }
+    
+    .subImgCon{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .MainImgCon{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .MainImgCon{
+        height: 250px;
+    }
+
+    .subImgCon{
+        width: 100%;
+    }
+}

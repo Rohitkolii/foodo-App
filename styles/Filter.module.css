@@ -1,0 +1,26 @@
+.Filtercon{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(221, 221, 221, 0.199);
+    padding: 10px 10px;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.Filtercon div .icon:nth-child(1){
+    margin-right: 15px;
+}
+
+.icon{
+    font-size: 35px;
+    background-color: rgb(86, 84, 84);
+    color: white;
+    padding: 5px;
+}
+
+.sort{
+    padding: 5px;
+    font-size: 15px;
+}

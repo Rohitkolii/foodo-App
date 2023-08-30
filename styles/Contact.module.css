@@ -1,0 +1,128 @@
+.innerContact{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.innerContact input{
+    width: 280px;
+    height: 45px;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgb(224, 224, 224);
+    padding: 8px;
+}
+
+.innerContact input:nth-child(1):focus{
+    text-transform: uppercase;
+}
+.innerContact input:nth-child(2):focus{
+    text-transform: uppercase;
+}
+
+.innerContact input:focus{
+    outline: none;
+    box-shadow: 1px 1px 5px rgb(143, 143, 143);
+}
+
+.con1 p:nth-child(1){
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.con1 p:nth-child(2){
+    color: black;
+    font-size: 13px;
+    /* font-weight: 400; */
+    margin-top: 8px;
+}
+
+.input1{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.input2 textarea{
+    width: 100%;
+    margin: 30px 0px 10px;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgb(205, 205, 205);
+    padding: 8px;
+}
+
+.input2 textarea:focus{
+    outline: none;
+    box-shadow: 1px 1px 5px rgb(143, 143, 143);
+    text-transform: capitalize;
+}
+
+
+.Image{
+    width: 400px;
+}
+
+.feature img{
+    width: 100%;
+}
+
+.con1 input[type=submit]{
+    background-color: #5F9DF7;
+    color: white;
+    border: transparent;
+    font-size: 15px;
+    padding: 10px 30px;
+    width: fit-content;
+    box-shadow: 1px 1px 5px rgb(205, 205, 205);
+    border-radius: 0;
+}
+
+@media only screen and (max-width:1250px) {
+    .innerContact{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:1250px) {
+    .con1 input{
+        width: 200px;
+    }
+    
+    .feature img{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:1250px) {
+    .innerContact{
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+
+    .feature{
+        text-align: center;
+        width: 100%;
+    }
+
+    .Image{
+        width: 100%;
+    }
+    
+    .con1 input{
+        width: 250px;
+    }
+}
+@media only screen and (max-width:590px) {
+
+    .innerContact{
+        width: 95%;
+    }
+    .con1{
+        width: 95%;
+    }
+    .con1 input{
+        width: 100%;
+    }
+}

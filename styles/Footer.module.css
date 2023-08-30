@@ -1,0 +1,96 @@
+.Footer{
+    background-color: #282828;
+    color: white;
+    /* position: fixed; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.Footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.innerFooter{
+    width: 80%;
+    margin: auto;
+    /* padding: 20px 0; */
+}
+
+.Footer h1 a{
+    color: #5F9DF7;
+}
+
+.Footer h1 a span{
+    color: white;
+}
+
+.Footeritems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+
+.Footeritems ul{
+    display: flex;
+    gap: 22px;
+}
+
+.Footer ul a{
+    transition: .3s;
+}
+
+.Footeritems ul a:hover{
+    color: #5F9DF7;
+}
+
+.Socialicons{
+    display: flex;
+    gap: 10px;
+}
+
+.Socialicons .icon{
+    font-size: 32px;
+    background-color: #5F9DF7;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.Socialicons .icon:hover{
+    background: linear-gradient(to right, rgb(251, 122, 122), #5F9DF7);
+    color: black;
+    /* transform: rotate(360deg); */
+}
+
+.Copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.Copyright a{
+    color: #5F9DF7;
+}
+
+
+@media only screen and (max-width:700px) {
+    .innerFooter{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .innerFooter .Footeritems{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Socialicons{
+        gap: 25px;
+    }
+}

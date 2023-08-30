@@ -1,0 +1,153 @@
+.LoginContainer{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.LoginContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.head{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.LoginContainer form input{
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgb(143, 143, 143);
+    border-radius: 3px;
+}
+
+.showpass{
+    position: relative;
+}
+
+
+.showpass span{
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+}
+
+    .showpass span{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 1px solid gray;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.LoginContainer form input:focus{
+    outline: transparent;
+}
+
+.LoginContainer input[type=Submit]{
+    background-color: #5F9DF7;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+}
+.Checks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Checks p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Checks p input{
+    width:15px;
+    box-shadow: none;
+}
+
+.Checks a{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.err{
+    color: red;
+    animation: error 1s;
+    position: relative;
+}
+
+@keyframes error {
+    0%{
+        left: 0px;
+    }
+    10%{
+        left: 5px;
+    }
+    20%{
+        left: 0px;
+    }
+    30%{
+        left: 5px;
+    }
+    40%{
+        left: 0%;
+    }
+    50%{
+        left: 5px
+    }
+    60%{
+        left: 0px;
+    }
+    70%{
+        left: 5px;
+    }
+    80%{
+        left: 0%;
+    }
+    90%{
+        left: 5px
+    }
+    100%{
+        left: 0px;
+    }
+
+
+}
+
+@media only screen and (max-width:550px) {
+
+    .LoginContainer form input{
+        width: 85%;
+        margin: auto;
+    }
+    .Checks p input{
+        width: 18px;
+    }
+
+    .err{
+        width: 85%;
+        margin: auto;
+    }
+
+    .innerLoginContainer{
+        width: 100%;
+        margin: auto;
+    }
+
+    .Checks{
+        width: 85%;
+        margin: -8px auto;
+    }
+}

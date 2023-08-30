@@ -1,0 +1,31 @@
+.CartItems{
+    display: grid;
+    grid-template-columns: 40% 15% 15% 15% 15%;
+}
+.ItemCard{
+    border-bottom: 1px solid gray;
+}
+
+
+.col3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col3 button{
+    background-color: transparent;
+    padding: 2px;
+    width: 30px;
+    height: 25px;
+    border: transparent;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
