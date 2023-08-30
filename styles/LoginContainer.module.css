@@ -24,17 +24,17 @@
     border-radius: 3px;
 }
 
-.showpass{
+.input_con{
     position: relative;
 }
 
 
-.showpass span{
+.input_con span{
     font-size: 20px;
     color: rgb(60, 60, 60);
 }
 
-    .showpass span{
+    .input_con span{
     position: absolute;
     right: 0;
     top: 50%;
@@ -128,10 +128,20 @@
 
 @media only screen and (max-width:550px) {
 
-    .LoginContainer form input{
+    .LoginContainer form .input_con{
         width: 85%;
         margin: auto;
     }
+
+    .LoginContainer form .input_con input{
+        width: 100%;
+    }
+
+    .LoginContainer input[type=Submit]{
+        width: 85%;
+        margin: auto;
+    }
+
     .Checks p input{
         width: 18px;
     }

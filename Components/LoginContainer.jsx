@@ -52,11 +52,11 @@ const LoginContainer = () => {
                 <p>Sign in and start food adventure</p>
             </div>
             <form onSubmit={LoginHandler}>
-                <div>
+                <div className={Styles.input_con}>
                     <input type="email" placeholder='Username' onChange={(e)=> setemail(e.target.value)} />
                 </div>
 
-                <div className={Styles.showpass}>
+                <div className={Styles.input_con}>
                     <input type={showPassword ? "text" : 'password'} placeholder='Password' onChange={(e)=> setpassword(e.target.value)} />
                     
                     {
