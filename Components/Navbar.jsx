@@ -24,6 +24,17 @@ const Navbar = () => {
     }
   }
 
+  const showmobilesignin = () => {
+    if(typeof window !== 'undefined'){
+      const item = localStorage.getItem('token')
+      if(item){
+        return <Link onClick={()=> localStorage.removeItem('token')} className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} />Sign out</Link>
+      } else {
+        return <Link className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} /> Sign in</Link>
+      } 
+    }
+  }
+
   useEffect(()=> {
     setIsClient(true)
   }, [])
@@ -43,20 +54,18 @@ const Navbar = () => {
             <Link href='/menu'>Menu</Link>
             <Link href='/orders'>Order</Link>
             <Link href='/recipes'>Recipes</Link>
-            <Link className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} />Login</Link>
+              {
+                isClient ?
+                showmobilesignin()
+                :
+                ""
+              }
+            {/* <Link className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} />Login</Link> */}
             <Link className={Styles.mobilelinks} href='/cart'><AiOutlineShoppingCart className={Styles.icon} />Cart <span>{Cart.length}</span></Link>
           </ul>
         </div>
         <div className={Styles.userarea}>
           <ul>
-            {/* {
-              localStorage.getItem('token') ? 
-              <Link onClick={()=> localStorage.removeItem('token')} className={Styles.login} href='/login'><AiOutlineUser className={Styles.icon} /> Sign out</Link>
-             : 
-              <Link className={Styles.login} href='/login'><AiOutlineUser className={Styles.icon} /> Sign in</Link>
-            } */}
-            
-
             {
               isClient ?
               showsignin()
