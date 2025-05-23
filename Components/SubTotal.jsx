@@ -7,7 +7,7 @@ const SubTotal = () => {
 
     const {Cart} = useCartContext()
     let subtotal = 0;
-    let Promocode = "FOODO50";
+    let Promocode = "BiteBuddy50";
     
     const [Promo, setPromo] = useState('')
     const [Promoammount, SetPromoammount] = useState(0)

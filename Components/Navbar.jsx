@@ -5,6 +5,9 @@ import Styles from '../styles/Navbar.module.css'
 import {AiOutlineShoppingCart, AiOutlineUser, AiOutlineMenu} from 'react-icons/ai'
 import { useEffect, useState } from 'react'
 import { useCartContext } from '../Context/CartContext'
+import { MdOutlineRestaurantMenu } from "react-icons/md";
+import { IoIosRestaurant } from "react-icons/io";
+
 
 const Navbar = () => {
 
@@ -13,34 +16,42 @@ const Navbar = () => {
 
   const {Cart} = useCartContext()
   
-  const showsignin = () => {
-    if(typeof window !== 'undefined'){
-      const item = localStorage.getItem('token')
-      if(item){
-        return <Link onClick={()=> localStorage.removeItem('token')} className={Styles.login} href='/login'><AiOutlineUser className={Styles.icon} /> Sign out</Link>
-      } else {
-        return <Link className={Styles.login} href='/login'><AiOutlineUser className={Styles.icon} /> Sign in</Link>
-      } 
-    }
+  // const showsignin = () => {
+  //   if(typeof window !== 'undefined'){
+  //     const item = localStorage.getItem('token')
+  //     if(item){
+  //       return <Link onClick={()=> localStorage.removeItem('token')} className={Styles.login} href='/login'><AiOutlineUser className={Styles.icon} /> Sign out</Link>
+  //     } else {
+  //       return <Link className={Styles.login} href='/login'><AiOutlineUser className={Styles.icon} /> Sign in</Link>
+  //     } 
+  //   }
+  // }
+
+  // const showmobilesignin = () => {
+  //   if(typeof window !== 'undefined'){
+  //     const item = localStorage.getItem('token')
+  //     if(item){
+  //       return <Link onClick={()=> localStorage.removeItem('token')} className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} />Sign out</Link>
+  //     } else {
+  //       return <Link className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} /> Sign in</Link>
+  //     } 
+  //   }
+  // }
+
+  const handleMenu = () =>{
+    setHammenu(!Hammenu);
+    if (!Hammenu) document.body.style.overflowY = "hidden"
+    else document.body.style.overflowY = "scroll"
   }
 
-  const showmobilesignin = () => {
-    if(typeof window !== 'undefined'){
-      const item = localStorage.getItem('token')
-      if(item){
-        return <Link onClick={()=> localStorage.removeItem('token')} className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} />Sign out</Link>
-      } else {
-        return <Link className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} /> Sign in</Link>
-      } 
-    }
-  }
 
   useEffect(()=> {
     setIsClient(true)
+
   }, [])
 
-  return (
-    <div className={Styles.Navbar}>
+  return (<>
+    {/* <div className={Styles.Navbar}>
         <div className={Styles.logo}>
             <Link href='/'>
               <h1>
@@ -60,7 +71,7 @@ const Navbar = () => {
                 :
                 ""
               }
-            {/* <Link className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} />Login</Link> */}
+            <Link className={Styles.mobilelinks} href='/login'><AiOutlineUser className={Styles.icon} />Login</Link>
             <Link className={Styles.mobilelinks} href='/cart'><AiOutlineShoppingCart className={Styles.icon} />Cart <span>{Cart.length}</span></Link>
           </ul>
         </div>
@@ -76,7 +87,31 @@ const Navbar = () => {
           </ul>
         </div>
           <AiOutlineMenu onClick={()=> setHammenu(!Hammenu)} className={Styles.hammenu}/>
-    </div>
+    </div> */}
+
+    <nav className={Styles.Navbar}>
+      <div className={Styles.logo}>
+        Bite<span>Buddy</span>.
+      </div>
+      <div className={`${!Hammenu ? Styles.navlist : Styles.mobilelinks}`}>
+        <ul>
+          <Link href=''>Home</Link>
+          <Link href=''>Menu</Link>
+          <Link href=''>Foods</Link>
+          <Link href='/cart'>Recipe</Link>
+          <Link className={Styles.login} href='/login'><AiOutlineUser className={Styles.icon} /> Sign in</Link>
+          {/* <Link className={Styles.cart} href='/cart'><AiOutlineShoppingCart className={Styles.icon} /><span>{Cart.length}</span></Link> */}
+
+        </ul>
+      </div>
+      {
+        Hammenu ?
+        <MdOutlineRestaurantMenu onClick={()=> handleMenu()} className={Styles.hammenu} />
+        : 
+        <IoIosRestaurant onClick={()=> handleMenu()} className={Styles.hammenu} />
+      }
+    </nav>
+    </>
   )
 }
 

@@ -5,6 +5,9 @@ import { useProductContext } from '../Context/ProductContext'
 import Link from 'next/link'
 import Loading from "./Loading"
 
+import { MdKeyboardArrowRight } from "react-icons/md";
+
+
 const Product = ({slicevalue,producTitle}) => {
 
   const {isLoading, Products} = useProductContext()
@@ -35,7 +38,7 @@ const Product = ({slicevalue,producTitle}) => {
               }
             </div>
         <div className={Styles.Loadbtn}>
-          <Link href='/menu'>Explore More...</Link>
+          <Link href='/menu'>Explore More <MdKeyboardArrowRight /></Link>
         </div>
     </div>
 }

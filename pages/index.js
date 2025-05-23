@@ -5,6 +5,7 @@ import Contact from '../Components/Contact'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Product from '../Components/Product'
+import Comitment from "@/Components/Comitment"
 
 export default function Home() {
 
@@ -13,11 +14,12 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Foodo | A Food Delivery App</title>
-      <link rel="icon" type="image/x-icon" href="/images/header.png"></link>
+      <title>BiteBuddy | A Food Delivery App</title>
+      <link rel="icon" type="image/x-icon" href="/images/b.png"></link>
     </Head>
         <Header />
         <Product producTitle={producTitle} slicevalue={slicevalue} />
+        <Comitment />
         <Contact />
         <Footer />
     </>

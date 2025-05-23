@@ -1,7 +1,13 @@
+.Contact{
+    /* background: linear-gradient(to bottom, #00000027,  #000), url("/Images/f3.jpg"); */
+    background-size: cover;
+    padding: 50px 0;
+}
 .innerContact{
     width: 80%;
     margin: 20px auto;
     display: flex;
+    gap: 50px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
@@ -12,7 +18,8 @@
     height: 45px;
     border-radius: 6px;
     border: transparent;
-    box-shadow: 1px 1px 5px rgb(224, 224, 224);
+    /* box-shadow: 1px 1px 5px rgb(224, 224, 224); */
+    border: 1px solid var(--pink);
     padding: 8px;
 }
 
@@ -53,6 +60,7 @@
     border: transparent;
     box-shadow: 1px 1px 5px rgb(205, 205, 205);
     padding: 8px;
+    border: 1px solid var(--pink);
 }
 
 .input2 textarea:focus{
@@ -63,7 +71,7 @@
 
 
 .Image{
-    width: 400px;
+    /* width: 400px; */
 }
 
 .feature img{
@@ -71,14 +79,22 @@
 }
 
 .con1 input[type=submit]{
-    background-color: #5F9DF7;
+    background-color: var(--pink);
     color: white;
-    border: transparent;
     font-size: 15px;
     padding: 10px 30px;
     width: fit-content;
-    box-shadow: 1px 1px 5px rgb(205, 205, 205);
-    border-radius: 0;
+    /* box-shadow: 1px 1px 5px rgb(205, 205, 205); */
+    border-radius: 24px;
+    transition: .3s;
+    border: 2px solid var(--pink);
+}
+
+.con1 input[type=submit]:hover{
+    border: 2px solid var(--pink);
+    background-color: white;
+    color: var(--pink);
+    font-weight: 500;
 }
 
 @media only screen and (max-width:1250px) {

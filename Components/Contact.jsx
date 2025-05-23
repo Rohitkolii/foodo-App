@@ -63,7 +63,7 @@ const Contact = () => {
 
         <div className={Styles.feature}>
           <div className={Styles.Image}>
-            <img src="/Images/contact.png" alt="contact" />
+            <img src="/Images/contact3.jpg" alt="contact" />
           </div>
         </div>
       </div>

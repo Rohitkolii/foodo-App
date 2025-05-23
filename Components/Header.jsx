@@ -16,8 +16,8 @@ const Header = () => {
         <div className={Styles.innerHeader}>
           <div className={Styles.colfirst}>
             <p>Discover New Taste In Every Bite.</p>
-            <h1>Special tasty Burger</h1>
-            <p className={Styles.intro}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis, amet in facilis temporibus illo hic nostrum earum aperiam eius eligendi maxime ad porro cum odio labore laudantium ab harum.</p>
+            <h1>The Perfect Space to Enjoy Fantastic <span> Food</span></h1>
+            <p className={Styles.intro}>Festive dining at Farthings where we are strong believers in using the very best produce</p>
             <div className={Styles.colfirst_btn}>
               <Link href='/Order'>Order Now</Link>
               <Link href='/menu'>Go to Menu</Link>
@@ -26,11 +26,13 @@ const Header = () => {
 
           <div className={Styles.colsecond}>
             <div className={Styles.image}>
-              <img src="/Images/header.png" alt="main"/>
-              {/* <Image src='/Images/Header.png' width={100} height={100}/> */}
+              <img src="/Images/fi3.png" alt="main"/>
             </div>
           </div>
         </div>
+        <img className={Styles.wave1} src="/Images/wave3.svg" alt="" />
+        <img className={Styles.wave1} src="/Images/wave.svg" alt="" />
+        <img className={Styles.wave2} src="/Images/wave2.svg" alt="" />
     </div>
   )
 }

@@ -8,12 +8,8 @@ const Footer = () => {
     <div className={Styles.Footer}>
         <div className={Styles.innerFooter}>
             <div className={Styles.Footeritems}>
-                <div className={Styles.Footerlogo}>
-                    <h1>
-                        <Link href='/'>
-                            Foodo<span>.</span>
-                        </Link>
-                    </h1>
+                <div className={Styles.logo}>
+                    Bite<span>Buddy</span>.
                 </div>
                 <div className={Styles.FooterLinks}>
                     <ul>
@@ -31,7 +27,7 @@ const Footer = () => {
             </div>
 
             <div className={Styles.Copyright}>
-                <p>Copyright @2023 <Link href='/'>Foodo.</Link></p>
+                <p>Copyright @2023 <Link href='/'>BiteBuddy.</Link></p>
             </div>
         </div>
     </div>

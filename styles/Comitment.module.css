@@ -1,0 +1,409 @@
+.Comitment{
+    /* background-color: rgba(240, 248, 255, 0.632); */
+    background-color: #ffd30d2a;
+    padding: 50px 0;
+}
+.innComitment{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+
+.innComitment .italic{
+    color: var(--pink);
+    /* font-style: italic; */
+    font-size: 25px;
+     font-family: "Playball", cursive;
+}
+
+.innComitment .text1{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(39, 39, 39);
+    line-height: 25px;
+}
+
+.innComitment .text2{
+    font-size: 13px;
+    margin: 10px 0;
+    color: rgb(29, 29, 29);
+    line-height: 18px;
+}
+
+.col3 a{
+    background-color: var(--pink);
+    color: white;
+    padding: 0px 5px 0px 30px;
+    border-radius: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 15px;
+    height: 50px;
+    transition: .3s;
+    float: right;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 2px solid var(--pink);
+}
+
+.col3 a svg{
+    background-color: white;
+    color: black;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.col3 a:hover svg{
+    /* transform: translateX(15px); */
+    background-color: var(--pink);
+    color: white;
+}
+.col3 a:hover{
+    border: 2px solid var(--pink);
+    background-color: white;
+    color: var(--pink);
+    font-weight: 500;
+}
+
+.commitcontact{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.commitcontact .phone p:nth-child(1){
+    text-transform: capitalize;
+    color: var(--pink);
+    font-weight: 500;
+    font-size: 16px;
+    font-style: oblique;
+}
+
+.commitcontact .phone p:nth-child(2){
+    font-size: 20px;
+    color: orange;
+    font-weight: 500;
+}
+
+.innComitment .col3{
+    text-align: right;
+}
+
+.highlight{
+    padding: 50px 0;
+}
+
+.innhighlight{
+    /* width: 70%; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* gap: 20px; */
+}
+
+
+.highlightimg img{
+    width: 100%;
+    height: 450px;
+    border-radius: 0 24px 24px 0;
+    /* border: 2px solid var(--yellow); */
+    padding: 2px;
+    object-fit: cover;
+}
+
+.highlightcon{
+    padding: 50px;
+}
+
+.highlightcon p:nth-child(1){
+    color: var(--pink);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.highlightcon p:nth-child(2){
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.highlightcon p:nth-child(3){
+    color: rgb(47, 47, 47);
+    width: 70%;
+    line-height: 25px;    
+}
+
+.highlightcon .nums{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgb(191, 191, 191);
+    width: 70%;
+}
+.highlightcon .nums div{
+    padding: 20px;
+}
+
+.highlightcon .nums div:nth-child(2){
+    border-left:1px solid rgb(191, 191, 191);
+    border-right:1px solid rgb(191, 191, 191);
+}
+
+.highlightcon .nums p:nth-child(1){
+    color: var(--pink);
+}
+
+.highlightcon .nums p:nth-child(2){
+    color: var(--yellow);
+}
+
+.appintro{
+    background-color: rgba(240, 248, 255, 0.632);
+    padding: 50px 0;
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.innappintro{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+.innappintro p:nth-child(1){
+    color: var(--pink);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.innappintro p:nth-child(2){
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: rgb(37, 37, 37);
+}
+
+.innappintro ul{
+    line-height: 30px;
+    list-style: none;
+    margin: 20px auto;
+}
+.innappintro ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(79, 78, 78);
+}
+.innappintro ul li svg{
+    color: var(--yellow);
+}
+
+.appstyle{
+    background-color: var(--pink);
+    height: 400px;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+
+.innappintro .phoneimg{
+    /* position: absolute; */
+    /* bottom: 0; */
+    position: relative;
+    left: 100px;
+    width: 350px;
+    z-index: 1;
+}
+
+.innappintro .btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.innappintro .btn a{
+    padding: 15px 30px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.innappintro .btn a:nth-child(1){
+    background-color: var(--pink);
+}
+.innappintro .btn a:nth-child(2){
+    background-color: black;
+}
+
+
+@media only screen and (max-width:1200px) {
+    .innComitment{
+        width: 90%;
+    }
+    
+    .innappintro{
+        width: 90%;
+    }
+
+    .appintrocol2 img:nth-child(1){
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .innComitment{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.innappintro{
+    grid-template-columns: repeat(1, 1fr);       
+}
+
+
+.innComitment .col3{
+    text-align: left;
+}
+
+.innhighlight{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    /* grid-template-columns: repeat(1, 1fr); */
+}
+
+.highlightcon p:nth-child(3){
+    color: rgb(47, 47, 47);
+    width: 100%;
+    line-height: 25px;    
+}
+
+.highlightcon .nums{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgb(191, 191, 191);
+    width: 100%;
+}
+
+
+.col3 a{
+    float: left;
+}
+
+.Comitment img{
+    width: 80%;
+}
+
+.highlightcon{
+    padding: 0;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.appstyle{
+    left: 0;
+    bottom: 0;
+    transform: translateX(0);
+    width: 50%;
+    height: 350px;
+    border-radius:0 50% 50% 0;
+}
+
+}
+
+@media only screen and (max-width:650px) {
+    .innComitment{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .col3 a{
+        float: none;
+        margin: auto;
+    }
+    .innComitment .col3{
+        text-align: center;
+    }
+
+    .commitcontact{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .appstyle{
+    left: 0;
+    bottom: 0;
+    transform: translateX(0);
+    width: 90%;
+    height: 350px;
+    border-radius:0 50% 50% 0;
+}
+
+.innappintro{
+    gap: 50px;
+}
+
+.innappintro .phoneimg{
+    /* position: absolute; */
+    /* bottom: 0; */
+    position: relative;
+    left: 0px;
+    width: 350px;
+    z-index: 1;
+}
+
+.appintro{
+    padding-bottom: 0;
+}
+
+
+.highlightcon .nums{
+    width: 100%;
+}
+.highlightcon .nums div{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.highlightcon .nums div:nth-child(2){
+    border-left:1px solid rgb(191, 191, 191);
+    border-right:1px solid rgb(191, 191, 191);
+}
+
+.highlightcon .nums p:nth-child(1){
+    color: var(--pink);
+    font-size: 13px;
+}
+
+.highlightcon .nums p:nth-child(2){
+    color: var(--yellow);
+    font-size: 30px;
+}
+
+
+}
+
+@media only screen and (max-width:450px){
+    .highlight img{
+        height: 280px;
+    }
+}
