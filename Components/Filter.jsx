@@ -24,6 +24,7 @@ const Filter = () => {
                 <option value="saab">high price</option>
                 <option value="mercedes">a-z</option>
                 <option value="audi">z-a</option>
+                <option value="audi">z-a</option>
             </select>
         </div>
     </div>
